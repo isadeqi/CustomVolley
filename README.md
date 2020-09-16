@@ -3,9 +3,9 @@ CustomVolley
 
 
 How do I use CustomVolley?
-
-Or use Gradle:
 -------------------
+Or use Gradle:
+
 ```gradle
 repositories {
    maven { url 'https://jitpack.io' }
