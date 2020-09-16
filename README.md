@@ -117,7 +117,7 @@ Delete
         volleyHelper.delete(getResources().getString(R.string.url),id, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
-                Log.e("ssss",s);
+                Log.e("onResponse",s);
             }
         }, new Callable<Void>() {
             @Override
