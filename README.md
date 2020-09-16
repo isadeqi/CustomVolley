@@ -71,11 +71,12 @@ Post
         volleyHelper.post(getResources().getString(R.string.url),paramTypes, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
-                Log.e("ssss",s);
+                Log.e("onResponse",s);
             }
         }, new Callable<Void>() {
             @Override
             public Void call() throws Exception {
+               //Callable Error 
                 return null;
             }
         });
@@ -90,11 +91,12 @@ Put
         volleyHelper.put(getResources().getString(R.string.url),id,paramTypes, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
-                Log.e("ssss",s);
+                Log.e("onResponse",s);
             }
         }, new Callable<Void>() {
             @Override
             public Void call() throws Exception {
+               //Callable Error 
                 return null;
             }
         });
@@ -113,6 +115,7 @@ Delete
         }, new Callable<Void>() {
             @Override
             public Void call() throws Exception {
+               //Callable Error 
                 return null;
             }
         });
