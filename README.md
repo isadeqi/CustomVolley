@@ -26,6 +26,13 @@ Manifest
     .
  </application>
 ```
+   
+SetQuery
+-------------------
+```java
+     VolleyHelper volleyHelper=new VolleyHelper(this);
+     volleyHelper.setQuery("key","value");
+```
 
 Get
 -------------------
