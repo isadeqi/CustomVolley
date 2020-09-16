@@ -1,7 +1,11 @@
 CustomVolley
 =====
-Or use Gradle:
 
+
+How do I use CustomVolley?
+-------------------
+Or use Gradle:
+-------------------
 ```gradle
 repositories {
    maven { url 'https://jitpack.io' }
@@ -11,10 +15,6 @@ dependencies {
   implementation 'com.github.isadeqi:CustomVolley:1.0'
 }
 ```
-
-How do I use CustomVolley?
--------------------
-
 Manifest
 -------------------
 ```xml
@@ -27,14 +27,21 @@ Manifest
  </application>
 ```
    
-SetQuery
+How do I set query?
 -------------------
 ```java
      VolleyHelper volleyHelper=new VolleyHelper(this);
      volleyHelper.setQuery("key","value");
 ```
 
-Get
+How do I set token?
+-------------------
+```java
+   UtilityHelper utilityHelper=new UtilityHelper(this);
+   utilityHelper.setSharedPreferences("token"," Your token ");
+```
+
+How do I use GET?
 -------------------
 ```java
 VolleyHelper volleyHelper=new VolleyHelper(this);
@@ -52,7 +59,7 @@ VolleyHelper volleyHelper=new VolleyHelper(this);
         });
 ```
 
-Get Id
+How do I use GET by id?
 -------------------
 ```java
 VolleyHelper volleyHelper=new VolleyHelper(this);
@@ -69,7 +76,7 @@ VolleyHelper volleyHelper=new VolleyHelper(this);
             }
         });
 ```
-Post
+How do I use POST?
 -------------------
 ```java
       VolleyHelper volleyHelper=new VolleyHelper(this);
@@ -89,7 +96,7 @@ Post
         });
 ```
 
-Put
+How do I use PUT?
 -------------------
 ```java
        VolleyHelper volleyHelper=new VolleyHelper(this);
@@ -108,12 +115,10 @@ Put
             }
         });
 ```
-Delete
+How do I use DELETE?
 -------------------
 ```java
         VolleyHelper volleyHelper=new VolleyHelper(this);
-        ArrayList<ParamType> paramTypes=new ArrayList<>();
-        paramTypes.add(new ParamType("key","value"));
         volleyHelper.delete(getResources().getString(R.string.url),id, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
