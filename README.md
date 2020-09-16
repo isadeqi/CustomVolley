@@ -3,7 +3,7 @@ CustomVolley
 
 
 How do I use CustomVolley?
--------------------
+
 Or use Gradle:
 -------------------
 ```gradle
